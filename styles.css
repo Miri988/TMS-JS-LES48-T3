@@ -1,0 +1,178 @@
+body {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  padding: 1em;
+}
+
+div {
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.segments {
+  border: 1px solid rgb(213,213,213);
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 0 rgb(213,213,213);
+  padding: 1em;
+  background: white;
+}
+
+.segments > .segment:not(:last-child) {
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgb(213,213,213);
+}
+
+.segments > .segment:not(:first-child) {
+  padding-top: 1em;
+}
+
+.form {
+  min-width: 400px;
+}
+
+.form > .field:not(:last-child) {
+  margin-bottom: .8em;
+}
+
+.form > .field {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+}
+
+.form > .field > label {
+  display: block;
+  margin-bottom: .3em;
+  font-weight: 600;
+  font-size: .9em;
+}
+
+.form > .field.inline {
+  flex-flow: row;
+  align-items: center;
+}
+
+.form > .field.inline > label {
+  display: inline;
+  margin: 0;
+  margin-right: .4em;
+}
+
+.form > .field > input {
+  width: 100%;
+  padding: .5em;
+  border-radius: 5px;
+  border: 1px solid rgb(213,213,213);
+}
+
+.header {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.button {
+  outline: none;
+  background: rgb(38, 89, 208);
+  color: white;
+  cursor: pointer;
+  padding: .5em 1em;
+  border-radius: 5px;
+  border: none;
+}
+
+[class*="right aligned"] {
+  text-align: right;
+}
+
+.grid {
+  display: grid;
+  grid-template: 1fr / 1fr 450px;
+  height: 100%;
+}
+
+.grid > .column {
+  min-height: 0;
+  padding: 0 1em
+}
+
+.grid > .column:last-child {
+  padding-right: 0;
+}
+
+.grid > .column:first-child {
+  padding-left: 0;
+}
+
+.grid > .column:not(:last-child) {
+  border-right: 1px solid rgb(213,213,213);
+}
+
+.collapsing {
+  width: 1px;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid rgb(213,213,213);
+  border-radius: 5px;
+  border-spacing: 0;
+}
+
+.table.scrolling th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-top: 1px solid rgb(213,213,213);
+}
+
+th:not(:last-child), td:not(:last-child) {
+  border-right: 1px solid rgb(213,213,213);
+}
+
+th, tbody > tr:not(:last-child) > td {
+  border-bottom: 1px solid rgb(213,213,213);
+}
+
+td, th {
+  padding: 1em;
+}
+
+th {
+  background: rgb(241, 241, 241);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.vertical {
+  flex-flow: column;
+}
+
+.flex > .fluid {
+  flex-grow: 1;
+}
+
+.flex.segments {
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+  right: -0.5em;
+  padding-right: 0.5em;
+}
+
+.wrap {
+  height: 100%;
+}
+  

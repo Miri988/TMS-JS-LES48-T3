@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Homework</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="column">
+            <div class="ui vertical flex segments">
+                <div class="right aligned segment">
+                    <button class="button" name="remove">Delete all</button>
+                </div>
+                <div class="fluid segment">
+                    <div class="wrap">
+                        <div class="absolute">
+                            <table class="scrolling table">
+                                <thead>
+                                    <tr>
+                                        <th class="collapsing">#</th>
+                                        <th class="collapsing">Name</th>
+                                        <th class="collapsing">Surname</th>
+                                        <th>Age</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="empty">
+                                        <td colspan="4">-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="segments">
+                <div class="segment">
+                    <div class="header">Заполните форму</div>
+                </div>
+                <div class="segment">
+                    <form class="form">
+                        <div class="field">
+                            <label>Имя</label>
+                            <input name="name" type="text" placeholder="..." />
+                        </div>
+                        <div class="field">
+                            <label>Фамилия</label>
+                            <input name="surname" type="text" placeholder="..." />
+                        </div>
+                        <div class="field">
+                            <label>Возраст</label>
+                            <input name="age" type="number" placeholder="..." />
+                        </div>
+                    </form>
+                </div>
+                <div class="right aligned segment">
+                    <button class="button" name="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src = 'int_script.js'></script>
+</body>
+</html>
